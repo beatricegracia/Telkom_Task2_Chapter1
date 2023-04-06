@@ -1,0 +1,15 @@
+function example(){
+    function dummy() {
+        return 2;
+    }
+    return dummy();
+    function dummy() {
+        return 5;
+    }
+}
+alert(example());
+
+
+Output dari function example pada alert diatas adalah 5.
+Karena pada function example, dijalankan function dummy yang pertama (yang menghasilkan output 2),
+Kemudian karena adanya function dengan nama yang sama, maka function mengalami override dan hanya menjalankan hasil function dummy yang kedua (dengan output 5)
